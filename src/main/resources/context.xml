@@ -7,6 +7,9 @@
 
         <bean class="quoters.InjectRandomIntAnnotationBeanPostProcessor"/>
 
+    <!-- Наш обработчик аннотации @InjectRandomInt -->
+    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
+
     <!-- Наш основной бин -->
 
        <bean class="quoters.TerminatorQuoter" id="terminatorQuoter">
