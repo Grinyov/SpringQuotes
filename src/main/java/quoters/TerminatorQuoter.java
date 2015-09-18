@@ -2,6 +2,8 @@ package quoters;
 
 /**
  * Created by Grinyov Vitaliy on 17.09.15.
+ *
+ *  основной
  */
 public class TerminatorQuoter implements Quoter {
 
