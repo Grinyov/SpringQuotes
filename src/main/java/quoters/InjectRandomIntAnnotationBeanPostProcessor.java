@@ -10,7 +10,7 @@ import java.util.Random;
 /**
  * Created by Grinyov Vitaliy on 17.09.15.
  *
- * Класс, отвечающий за обработку бинов имеющих аннотацию @InjectRandomInt
+ * РљР»Р°СЃСЃ, РѕС‚РІРµС‡Р°СЋС‰РёР№ Р·Р° РѕР±СЂР°Р±РѕС‚РєСѓ Р±РёРЅРѕРІ РёРјРµСЋС‰РёС… Р°РЅРЅРѕС‚Р°С†РёСЋ @InjectRandomInt
  */
 public class InjectRandomIntAnnotationBeanPostProcessor implements BeanPostProcessor{
 
@@ -19,13 +19,13 @@ public class InjectRandomIntAnnotationBeanPostProcessor implements BeanPostProce
         Field[] fields = bean.getClass().getDeclaredFields();
         for(Field field : fields){
             InjectRandomInt annotation = field.getAnnotation(InjectRandomInt.class);
-            if (annotation != null){                        // если аннотация есть, то
+            if (annotation != null){                        // РµСЃР»Рё Р°РЅРЅРѕС‚Р°С†РёСЏ РµСЃС‚СЊ, С‚Рѕ
                 int min = annotation.min();
                 int max = annotation.max();
                 Random random = new Random();
-                int i = min + random.nextInt(max - min);    // создаем случайное число из диапозона min - max
-                field.setAccessible(true);                  // получаем доступ к полю класса
-                ReflectionUtils.setField(field, bean, i);   // используем Спринговские утилиты рефлексии, указывая какое поле какого бина установить в значение i
+                int i = min + random.nextInt(max - min);    // СЃРѕР·РґР°РµРј СЃР»СѓС‡Р°Р№РЅРѕРµ С‡РёСЃР»Рѕ РёР· РґРёР°РїРѕР·РѕРЅР° min - max
+                field.setAccessible(true);                  // РїРѕР»СѓС‡Р°РµРј РґРѕСЃС‚СѓРї Рє РїРѕР»СЋ РєР»Р°СЃСЃР°
+                ReflectionUtils.setField(field, bean, i);   // РёСЃРїРѕР»СЊР·СѓРµРј РЎРїСЂРёРЅРіРѕРІСЃРєРёРµ СѓС‚РёР»РёС‚С‹ СЂРµС„Р»РµРєСЃРёРё, СѓРєР°Р·С‹РІР°СЏ РєР°РєРѕРµ РїРѕР»Рµ РєР°РєРѕРіРѕ Р±РёРЅР° СѓСЃС‚Р°РЅРѕРІРёС‚СЊ РІ Р·РЅР°С‡РµРЅРёРµ i
             }
         }
         return bean;

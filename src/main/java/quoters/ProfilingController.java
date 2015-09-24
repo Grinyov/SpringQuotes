@@ -3,9 +3,9 @@ package quoters;
 /**
  * Created by Grinyov Vitaliy on 24.09.15.
  *
- * Включает и выключает через jmx console наш профайлинг
+ * Р’РєР»СЋС‡Р°РµС‚ Рё РІС‹РєР»СЋС‡Р°РµС‚ С‡РµСЂРµР· jmx console РЅР°С€ РїСЂРѕС„Р°Р№Р»РёРЅРі
  *
- * для этого он наследует интерфейс MBean и регестрируется на MBean server
+ * РґР»СЏ СЌС‚РѕРіРѕ РѕРЅ РЅР°СЃР»РµРґСѓРµС‚ РёРЅС‚РµСЂС„РµР№СЃ MBean Рё СЂРµРіРµСЃС‚СЂРёСЂСѓРµС‚СЃСЏ РЅР° MBean server
  */
 public class ProfilingController implements ProfilingControllerMBean{
 

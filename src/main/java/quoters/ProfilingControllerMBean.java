@@ -3,8 +3,8 @@ package quoters;
 /**
  * Created by green on 25.09.2015.
  *
- * В этом интерфейсе прописываем методы которые зарегистрируются на MBean server
- * и будут доступны в jmx console
+ * Р’ СЌС‚РѕРј РёРЅС‚РµСЂС„РµР№СЃРµ РїСЂРѕРїРёСЃС‹РІР°РµРј РјРµС‚РѕРґС‹ РєРѕС‚РѕСЂС‹Рµ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂСѓСЋС‚СЃСЏ РЅР° MBean server
+ * Рё Р±СѓРґСѓС‚ РґРѕСЃС‚СѓРїРЅС‹ РІ jmx console
  */
 public interface ProfilingControllerMBean {
    void setEnable(boolean enable);
