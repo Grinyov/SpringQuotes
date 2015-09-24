@@ -1,5 +1,7 @@
 package quoters;
 
+import javax.annotation.PostConstruct;
+
 /**
  * Created by Grinyov Vitaliy on 17.09.15.
  *
@@ -13,6 +15,7 @@ public class TerminatorQuoter implements Quoter {
 
     private String message;
 
+    @PostConstruct
     public void init(){
         System.out.println("Phase 2");
         System.out.println(repeat);
