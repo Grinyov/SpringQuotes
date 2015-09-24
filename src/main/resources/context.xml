@@ -5,6 +5,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 
+    <context:annotation-config/>
+    <!-- Наш обработчик аннотации @Profiling -->
+    <bean class="quoters.ProfilingHandlerBeanPostProcessor"/>
     <!-- Наш обработчик аннотации @InjectRandomIntAnnotationBeanPostProcessor -->
     <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
 
