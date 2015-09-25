@@ -6,19 +6,20 @@
 
 
     <context:annotation-config/>
+
     <!-- Наш обработчик аннотации @Profiling -->
     <bean class="quoters.ProfilingHandlerBeanPostProcessor"/>
-    <!-- Наш обработчик аннотации @InjectRandomIntAnnotationBeanPostProcessor -->
-    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
-
     <!-- Наш обработчик аннотации @InjectRandomInt -->
     <bean class="quoters.InjectRandomIntAnnotationBeanPostProcessor"/>
+    <!-- Наш обработчик аннотации @PostProxy -->
+    <bean class="quoters.PostProxyInvokerContextListener"/>
 
-
+    <!-- Наш обработчик аннотации @InjectRandomIntAnnotationBeanPostProcessor
+    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/> -->
 
     <!-- Наш основной бин -->
 
        <bean class="quoters.TerminatorQuoter" id="terminatorQuoter">
-            <property name="message" value="I'll be back"/>
+            <property name="message" value="Speaking quote"/>
        </bean>
 </beans>

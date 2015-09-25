@@ -10,8 +10,8 @@ public class Main {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
 
       //  while (true) {
-       //     Thread.sleep(5000);
+      //      Thread.sleep(5000);
             context.getBean(Quoter.class).sayQuote();
-      //  }
+      // }
     }
 }
