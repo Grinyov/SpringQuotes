@@ -6,8 +6,8 @@ import java.lang.annotation.RetentionPolicy;
 /**
  * Created by green on 26.09.2015.
  *
- * Аннотация показывет что все бины настроены и прокси сгенерированы и
- * можно запускать ContextListener
+ * РђРЅРЅРѕС‚Р°С†РёСЏ РїРѕРєР°Р·С‹РІРµС‚ С‡С‚Рѕ РІСЃРµ Р±РёРЅС‹ РЅР°СЃС‚СЂРѕРµРЅС‹ Рё РїСЂРѕРєСЃРё СЃРіРµРЅРµСЂРёСЂРѕРІР°РЅС‹ Рё
+ * РјРѕР¶РЅРѕ Р·Р°РїСѓСЃРєР°С‚СЊ ContextListener
  */
 @Retention(RetentionPolicy.RUNTIME)
 public @interface PostProxy {
