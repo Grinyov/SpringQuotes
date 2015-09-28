@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 /**
  * Created by green on 27.09.2015.
  *
- * Анноиация указывающая что кдасс устарел и есть его новая версия
+ * РђРЅРЅРѕС‚Р°С†РёСЏ, СѓРєР°Р·С‹РІР°СЋС‰Р°СЏ С‡С‚Рѕ РєРґР°СЃСЃ СѓСЃС‚Р°СЂРµР» Рё РµСЃС‚СЊ РµРіРѕ РЅРѕРІР°СЏ РІРµСЂСЃРёСЏ
  */
 @Retention(RetentionPolicy.RUNTIME)
 public @interface DeprecatedClass {

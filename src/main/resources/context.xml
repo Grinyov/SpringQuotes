@@ -7,6 +7,8 @@
 
     <context:annotation-config/>
 
+    <!-- Наш обработчик аннотации @DeprecatedClass -->
+    <bean class="quoters.DeprecationHandlerBeanFactoryPostProcessor"/>
     <!-- Наш обработчик аннотации @Profiling -->
     <bean class="quoters.ProfilingHandlerBeanPostProcessor"/>
     <!-- Наш обработчик аннотации @InjectRandomInt -->
@@ -20,6 +22,6 @@
     <!-- Наш основной бин -->
 
        <bean class="quoters.TerminatorQuoter" id="terminatorQuoter">
-            <property name="message" value="Speaking quote"/>
+            <property name="message" value="Quote sayings"/>
        </bean>
 </beans>
